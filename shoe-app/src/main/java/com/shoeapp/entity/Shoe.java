@@ -49,6 +49,9 @@ public class Shoe {
     @Column(length = 1000)
     private String description;
 
+    // Change to:
+    @Lob  // This will map to a CLOB/TEXT type which can store large strings
+    @Column(columnDefinition = "TEXT")
     private String imageUrl;
 
     @OneToMany(mappedBy = "shoe", cascade = CascadeType.ALL, orphanRemoval = true)
