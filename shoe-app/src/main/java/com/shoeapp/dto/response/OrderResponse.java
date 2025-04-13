@@ -21,6 +21,23 @@ public class OrderResponse {
     private BigDecimal totalAmount;
     private String status;
     private List<CartItemResponse> items;
+
+    // Add shipping information
+    private String firstName;
+    private String lastName;
+    private String address;
+    private String city;
+    private String state;
+    private String zipCode;
+    private String country;
+    private String phoneNumber;
+    private String paymentMethod;
+    private String orderNotes;
+    private String shippingMethod;
+    private String trackingNumber;
+    private LocalDateTime shippedDate;
+    private LocalDateTime deliveredDate;
+
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 }
